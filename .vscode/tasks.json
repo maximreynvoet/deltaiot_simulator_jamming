@@ -1,0 +1,50 @@
+{
+	// "version": "2.0.0",
+	"version": "0.0.2",
+	"tasks": [
+		{
+			"type": "java",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:activforms}",
+				"${dependencies:activforms}",
+				"${compileOutput:simulator}",
+				"${dependencies:simulator}"
+			],
+			"problemMatcher": [],
+			"label": "java: exportjar:deltaiot_simulator"
+		},
+		{
+			"type": "java",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:activforms}",
+				"${dependencies:activforms}",
+				"${compileOutput:simulator}",
+				"${dependencies:simulator}"
+			],
+			"problemMatcher": [],
+			"label": "java: exportjar:deltaiot_simulator",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "java",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:activforms}",
+				"${dependencies:activforms}",
+				"${compileOutput:simulator}",
+				"${dependencies:simulator}"
+			],
+			"problemMatcher": [],
+			"label": "java: exportjar:deltaiot_simulator",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
